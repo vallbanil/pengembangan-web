@@ -1,0 +1,143 @@
+body {
+  background-color: rgb(251, 251, 251);
+  padding-top: 5%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+table,
+th,
+td {
+  border: 1px solid purple;
+}
+
+.naruto {
+  color: rgb(0, 0, 0);
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  padding: 8px;
+  border-spacing: 7px;
+}
+
+ul.a {
+  list-style: square;
+}
+
+h3 {
+  background-color: black;
+  color: white;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 15px;
+  text-align: left;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: black;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: purple;
+  font-style: italic;
+}
+.navbar .navbar-logo span {
+  color: tomato;
+}
+
+.navbar .navbar-nav a {
+  color: tomato;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+  color: tomato;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.2rem;
+  border-bottom: 0.1rem solid tomato;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.pricelist,
+.contact {
+  padding: 7rem 7% 1.4rem;
+  text-align: center;
+}
+
+.contact .row {
+  display: flex;
+  margin-top: 2rem;
+  background-color: #222;
+}
+
+.contact .row .map {
+  flex: 1 1 45rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.contact .row form {
+  flex: 1 1 45rem;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.contact .row form .input-group {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: var(--bg);
+  border: 1px solid #eee;
+  padding-left: 2rem;
+}
+
+.contact .row form .input-group input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  background: none;
+  color: #fff;
+}
+
+.contact .row form .btn {
+  margin-top: 3rem;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: #fff;
+  background-color: var(--primary);
+  cursor: pointer;
+}
